@@ -32,9 +32,9 @@ const App = () => {
       <h1 className="Header">Rick and Morty Szechuan sauce</h1>
   
       {
-        characters.map((character, index) => (
-          <Character key= {index} character={character}  />
-        ))
+        characters.map((character, index) => {
+          return <Character key= {index} character={character}  />
+        })
         }
 
     </div>
